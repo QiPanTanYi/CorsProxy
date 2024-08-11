@@ -1,4 +1,4 @@
-# CorsProxy : Go 实现前后端 URL 重定向，完成跨域Cors请求
+# CorsProxy : Go 实现前后端反向代理，完成跨域Cors请求
 
 ## 简介
 
