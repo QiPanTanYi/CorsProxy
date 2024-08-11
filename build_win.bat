@@ -4,14 +4,14 @@
 set GOOS=windows
 set GOARCH=amd64
 
-:: Create the 'win' directory if it does not exist
-if not exist win mkdir win
+:: Create the 'win-proxy' directory if it does not exist
+if not exist win-proxy mkdir win-proxy
 
 echo Setting up environment for building on Windows...
 echo Compiling the Go program...
 
-:: Build the Go program, outputting an executable named 'main.exe' inside the 'win' directory
-go build -o win\main.exe main.go
+:: Build the Go program, outputting an executable named 'main.exe' inside the 'win-proxy' directory
+go build -o win-proxy\CorsProxy.exe main.go
 
 :: Check if the build was successful
 if %errorlevel% neq 0 (
@@ -20,9 +20,9 @@ if %errorlevel% neq 0 (
     exit
 )
 
-:: Copy the 'config.ini' to the 'win' directory
-echo Copying 'config.ini' to the 'win' directory...
-copy config.ini win\config.ini
+:: Copy the 'config.ini' to the 'win-proxy' directory
+echo Copying 'config.ini' to the 'win-proxy' directory...
+copy config.ini win-proxy\config.ini
 
 :: Check if the copy was successful
 if %errorlevel% neq 0 (
@@ -32,7 +32,7 @@ if %errorlevel% neq 0 (
 )
 
 echo Compilation complete.
-echo The Windows executable 'main.exe' and 'config.ini' have been created in the 'win' directory.
+echo The Windows executable 'main.exe' and 'config.ini' have been created in the 'win-proxy' directory.
 
 pause
 echo Press any key to continue...
