@@ -29,7 +29,7 @@ pause
 
 ## 文件说明
 
-> /CorsProxy
+> CorsProxy   
 > ├── linux-proxy/          # Linux 环境下的打包产物  
 > │   ├── CorsProxy          # Linux 下的可执行文件    
 > │   ├── config.ini         # 配置文件  
