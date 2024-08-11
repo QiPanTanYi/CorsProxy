@@ -30,19 +30,19 @@ pause
 ## 文件说明
 
 > /CorsProxy
-> ├── linux-proxy/          # Linux 环境下的打包产物
-> │   ├── CorsProxy          # Linux 下的可执行文件
-> │   ├── config.ini         # 配置文件
-> │   └── proxy.log          # 日志文件
-> ├── win-proxy/            # Windows 环境下的打包产物
-> │   ├── CorsProxy.exe      # Windows 下的可执行文件
-> │   ├── config.ini         # 配置文件
-> │   └── proxy.log          # 日志文件
-> ├── build_linux.bat       # 打包为Linux 环境下的编译脚本
-> ├── build_win.bat         # 打包为Windows 环境下的编译脚本
-> ├── config.ini             # 原始配置文件
-> ├── go.mod                # 模块依赖文件
-> ├── go.sum                # 模块校验文件
+> ├── linux-proxy/          # Linux 环境下的打包产物  
+> │   ├── CorsProxy          # Linux 下的可执行文件    
+> │   ├── config.ini         # 配置文件  
+> │   └── proxy.log          # 日志文件    
+> ├── win-proxy/            # Windows 环境下的打包产物  
+> │   ├── CorsProxy.exe      # Windows 下的可执行文件  
+> │   ├── config.ini         # 配置文件  
+> │   └── proxy.log          # 日志文件  
+> ├── build_linux.bat       # 打包为Linux 环境下的编译脚本  
+> ├── build_win.bat         # 打包为Windows 环境下的编译脚本  
+> ├── config.ini             # 原始配置文件  
+> ├── go.mod                # 模块依赖文件  
+> ├── go.sum                # 模块校验文件  
 > └── main.go                # 跨域程序主要代码
 
 
